@@ -192,17 +192,17 @@ header i.ri-close-line {
 .swiper .background-1 {
   background:
     linear-gradient(to top, transparent, var(--main-bg)),
-    url("../image/background-1.png");
+    url("../image/background-1.webp");
 }
 .swiper .background-2 {
   background:
     linear-gradient(to top, transparent, var(--main-bg)),
-    url("../image/background-2.png");
+    url("../image/background-2.webp");
 }
 .swiper .background-3 {
   background:
     linear-gradient(to top, transparent, var(--main-bg)),
-    url("../image/background-3.png");
+    url("../image/background-3.webp");
 }
 /* swiper */
 .swiper-button-next,
@@ -225,7 +225,7 @@ header i.ri-close-line {
   position: relative;
   cursor: pointer;
   animation: product-type ease alternate forwards;
-  animation-timeline: view();
+  /* animation-timeline: view(); */
   &:hover h2 {
     top: 0;
   }
@@ -279,15 +279,14 @@ header i.ri-close-line {
   background: transparent;
 }
 .products-slider.active {
-  /* display: block; */
   transition: all 0.4s ease;
-  right: 0;
+  display: block;
 }
 .products {
   position: relative;
-  animation: product 0.1s ease alternate forwards;
-  animation-timeline: view();
-  animation-range: entry 0% exit 100%;
+  /* animation: product 0.1s ease alternate forwards; */
+  /* animation-timeline: view(); */
+  /* animation-range: entry 0% exit 100%; */
 }
 @keyframes product {
   0% {
@@ -304,9 +303,7 @@ header i.ri-close-line {
   transition: all 0.4s ease;
   width: 100%;
   margin: 0 auto;
-  /* display: none; */
-  position: absolute;
-  right: -300rem;
+  display: none;
 }
 .products-slider .swiper-slide {
   margin-top: 3rem;
@@ -317,7 +314,6 @@ header i.ri-close-line {
   background-color: var(--other-color);
   border-radius: 2rem;
   padding: 1rem;
-  transition: all 0.2s ease-in-out;
   min-height: 450px;
   &:hover {
     box-shadow: 1px 1px 20px 4px var(--bg-second-btn);
@@ -328,9 +324,8 @@ header i.ri-close-line {
 }
 /* About us*/
 .about {
-  animation: fade ease alternate forwards;
-  animation-timeline: view();
-  margin-top: 35em;
+  /* animation: fade ease alternate forwards; */
+  /* animation-timeline: view(); */
   p {
     margin-top: 20px;
     display: flex;
@@ -361,8 +356,8 @@ header i.ri-close-line {
 .comments {
   margin-right: 2rem;
   .comment {
-    animation: comment-animation ease-in-out alternate forwards;
-    animation-timeline: view();
+    /* animation: comment-animation ease-in-out alternate forwards; */
+    /* animation-timeline: view(); */
     animation-range: cover 0% cover 100%;
     margin-top: 2rem;
     line-height: 3rem;
